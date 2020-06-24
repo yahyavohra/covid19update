@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <title>Covid 19 Chat</title>
+        <!-- Bootstrap core CSS -->
+        <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+        <!-- Custom styles for this template -->
+        <link href="./assets/css/dashboard.css" rel="stylesheet" />
+    </head>
+    <body>
+        <nav class="navbar bg-dark flex-md-nowrap p-0 shadow">
+            <div class="py-3 px-3">
+                <a class="logoheading" href="#">
+                    <img class="logo" src="assets/img/shield.svg" alt="logo" />
+                    <span class="py-1"> Covid 19 </span>
+                </a>
+            </div>
+            <div class="quote">
+                Stay safe, stay at home
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="top-area box">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12 col-sm-6">
+                                <h3 class="py-4 border-bottom">Over all</h3>
+                            </div>
+                            <div class="col-md-4 col-xs-12 col-sm-6">
+                                <div class="card">
+                                    <h4>Total Cases</h4>
+                                    <span id="totalcases"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-12 col-sm-6">
+                                <div class="card">
+                                    <h4>Total Recovered</h4>
+                                    <span id="totalrecovered"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-12 col-sm-6">
+                                <div class="card">
+                                    <h4>Total Deaths</h4>
+                                    <span id="totaldeaths"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-xs-12 py-4">
+                                <canvas id="Total-Cases" class="w-100" style="display: block; width: 531px; height: 265px;" width="531" height="265" class="chartjs-render-monitor"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12 col-sm-6">
+                                <h3 class="py-4 border-bottom">Recent</h3>
+                            </div>
+                            <div class="col-md-4 col-xs-12 col-sm-6">
+                                <div class="card">
+                                    <h4>New Cases</h4>
+                                    <span id="newcases"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-12 col-sm-6">
+                                <div class="card">
+                                    <h4>New Recovered</h4>
+                                    <span id="newrecover"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-12 col-sm-6">
+                                <div class="card">
+                                    <h4>New Deaths</h4>
+                                    <span id="newdeathes"></span>
+                                </div>
+                            </div>
+                             <div class="col-md-12 col-xs-12 py-4">
+                            	<canvas id="New-Cases" class="w-100" style="display: block; width: 531px; height: 265px;" width="531" height="265" class="chartjs-render-monitor"></canvas>
+                        	</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-5 box">
+                <div class="row">
+                    <h2>All Country</h2>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-sm">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Country</th>
+                                    <th>Total Confirmed</th>
+                                    <th>Total Recovered</th>
+                                    <th>TotalDeaths</th>
+                                    <th>New Cases</th>
+                                </tr>
+                            </thead>
+                            <tbody id="demo"></tbody>
+                        </table>
+                    </div>
+                    <a href="#" id="loadMore">Load More</a>
+                    <a href="#top" id="totopb">Back to top</a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            yahya2vohra@gmail.com
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+        <script src="./assets/js/dashboard.js"></script>
+    </body>
+</html>
